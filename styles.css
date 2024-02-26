@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+    background-color: #ecf1ff;
+
+}
+header h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#input-field-section{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.letter-input-field{
+    width:62px;
+    height:62px;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid #dee1e9;
+    background-color: #fbfcff;
+}
+
+#input-button-section{
+    margin:20px 0;
+}
+
+#eliminate-letter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#eliminate-letter-container h2{
+    margin-bottom:24px;
+}
+
+.eliminate-letter-button{
+    width:48px;
+    height:48px;
+    font-size: 32px;
+
+}
+
+#reset-btn{
+    background-color: rgb(250, 77, 58);
+    padding:20px;
+    border:2px solid transparent;
+    border-radius: 4px;
+
+
+}
+#reset-btn:hover{
+    cursor: pointer;
+    background-color: rgb(249, 109, 94); ;
+}
+
+#check-btn{
+    background-color: green;
+    padding:20px;
+    border:2px solid transparent;
+    border-radius: 4px;
+
+}
+#check-btn:hover{
+    cursor: pointer;
+    background-color: rgb(94, 249, 110); ;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    margin:4px 0;
+}
+
+.eliminate-letter-button{
+    background-color: #dce1ed;
+    color:#414a5e;
+    border: 0.1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Montserrat,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.eliminate-letter-button:hover{
+  
+    background-color: #caced7;
+    cursor: pointer;
+
+
+}
+
+.eliminate-letter-button.active{
+    /* background-color: red; */
+    
+    background-color: #a2a8b7;
+
+}
+
+
+.output-container{
+    text-align: center;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust minmax and width as needed */
+    gap: 10px; /* Adjust gap between items */
+}
+.items-count{
+    margin:30px 0;
+}
